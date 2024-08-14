@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Romero | Portfolio</title>
+    <link rel="stylesheet" href="app.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Michael Romero</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about" onclick="showSection('about')">About</a></li>
+                    <li><a href="#experience" onclick="showSection('experience')">Experience</a></li>
+                    <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <section id="about" class="container section">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio!</p>
+        </section>
+
+        <section id="experience" class="container section hidden">
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3>Job Title 1</h3>
+                    <p>Company Name - Date Range</p>
+                    <p>Description.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Job Title 2</h3>
+                    <p>Company Name - Date Range</p>
+                    <p>Description.</p>
+                </div>
+                <!-- Add more experience items as needed -->
+            </div>
+        </section>
+
+        <section id="projects" class="container section hidden">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of project.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Michael Romero. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
