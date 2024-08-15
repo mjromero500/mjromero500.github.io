@@ -103,6 +103,18 @@ footer {
     overflow: hidden; /* Ensures text flows correctly around floated images */
 }
 
+.research-picture {
+    width: 100%; /* Make the research poster responsive */
+    max-width: 600px; /* Limit the maximum width to avoid oversized images */
+    height: auto;
+    display: block;
+    margin: 20px 0; /* Space above and below the image */
+}
+
+.experience-item {
+    text-align: left; /* Ensure text alignment is consistent */
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     header .container {
@@ -146,5 +158,14 @@ footer {
     .additional-picture {
         width: 100%; /* Full-width images on mobile */
         margin: 10px 0; /* Space around images */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .research-picture {
+        width: 100%; /* Ensure the image scales to full width on mobile */
+        max-width: 100%; /* Allow it to scale within the container */
+        margin: 10px 0; /* Adjust margins for mobile */
     }
 }
