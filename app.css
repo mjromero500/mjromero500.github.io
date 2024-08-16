@@ -82,13 +82,19 @@ header nav ul li a {
     text-align: center; /* Center the text within each item */
 }
 
+/* Link Styling */
 .contact-info li a {
-    color: #333;
-    text-decoration: none;
+    color: blue; /* Set the link color to blue */
+    text-decoration: underline; /* Add an underline for typical link appearance */
+}
+
+.contact-info li a:visited {
+    color: purple; /* Change the color to purple after the link has been clicked */
 }
 
 .contact-info li a:hover {
-    text-decoration: underline;
+    color: darkblue; /* Change the link color when hovered */
+    text-decoration: underline; /* Keep underline on hover */
 }
 
 footer {
