@@ -77,7 +77,9 @@ header nav ul li a {
 }
 
 .contact-info li {
-    display: inline-block; /* Use inline-block for better control of spacing and alignment */
+    display: inline-block; /* Ensure items can wrap */
+    width: auto; /* Ensure they don't stretch to full width */
+    text-align: center; /* Center the text within each item */
 }
 
 .contact-info li a {
@@ -211,9 +213,11 @@ footer .container {
     .contact-info {
         flex-direction: column; /* Stack contact items vertically on mobile */
         gap: 10px; /* Reduce gap between items */
+        align-items: center; /* Center align the items */
     }
 
     .contact-info li {
-        margin-bottom: 10px; /* Add some space between contact items */
+        width: 100%; /* Make sure items take full width on mobile */
+        text-align: center; /* Center the text */
     }
 }
