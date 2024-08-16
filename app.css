@@ -1,3 +1,4 @@
+/* General Styles */
 body, html {
     height: 100%;
     margin: 0;
@@ -9,6 +10,7 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
 }
 
 header {
@@ -51,8 +53,38 @@ header nav ul li a {
 }
 
 .content {
-    flex: 1;
+    flex: 1; /* Allow the content to grow and take up remaining space */
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact-info {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-info li {
+    display: inline;
+}
+
+.contact-info li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-info li a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -65,6 +97,12 @@ footer {
     width: 100%;
 }
 
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
 .hidden {
     display: none;
 }
@@ -73,47 +111,47 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 10px; /* Space between the images and text */
-    margin-left: -170px; /* Move the image container slightly to the left */
-    margin-top: 20px; /* Move the image container down */
+    margin-right: 10px;
+    margin-left: -170px;
+    margin-top: 20px;
     float: left;
 }
 
 .profile-picture {
-    width: 250px; /* Size of the profile picture */
+    width: 250px;
     height: auto;
     border-radius: 50%;
-    margin-right: -125px; /* Shift ProfilePic to the right */
-    margin-bottom: 10px; /* Space between profile picture and the row of other pictures */
+    margin-right: -125px;
+    margin-bottom: 10px;
 }
 
 .additional-images {
     display: flex;
-    justify-content: space-between; /* Space images evenly */
-    width: 100%; /* Full width of the profile picture */
-    max-width: 500px; /* Ensure it can accommodate larger images */
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
 }
 
 .additional-picture {
-    width: 300px; /* Larger size for additional pictures */
+    width: 300px;
     height: auto;
-    margin: 8px; /* Space between images */
+    margin: 8px;
 }
 
 .container section p {
-    overflow: hidden; /* Ensures text flows correctly around floated images */
+    overflow: hidden;
 }
 
 .research-picture {
-    width: 100%; /* Make the research poster responsive */
-    max-width: 600px; /* Limit the maximum width to avoid oversized images */
+    width: 100%;
+    max-width: 600px;
     height: auto;
     display: block;
-    margin: 20px 0; /* Space above and below the image */
+    margin: 20px 0;
 }
 
 .experience-item {
-    text-align: left; /* Ensure text alignment is consistent */
+    text-align: left;
 }
 
 /* Media Query for Mobile Devices */
@@ -147,26 +185,23 @@ footer {
     }
 
     .profile-picture {
-        width: 200px; /* Reduce size for mobile */
-        margin-right: 0; /* Center the profile picture */
+        width: 200px;
+        margin-right: 0;
     }
 
     .additional-images {
-        flex-direction: column; /* Stack images vertically */
+        flex-direction: column;
         max-width: 100%;
     }
 
     .additional-picture {
-        width: 100%; /* Full-width images on mobile */
-        margin: 10px 0; /* Space around images */
+        width: 100%;
+        margin: 10px 0;
     }
 
-}
-
-@media (max-width: 768px) {
     .research-picture {
-        width: 100%; /* Ensure the image scales to full width on mobile */
-        max-width: 100%; /* Allow it to scale within the container */
-        margin: 10px 0; /* Adjust margins for mobile */
+        width: 100%;
+        max-width: 100%;
+        margin: 10px 0;
     }
 }
