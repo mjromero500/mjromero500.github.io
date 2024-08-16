@@ -60,6 +60,7 @@ header nav ul li a {
     justify-content: space-between;
 }
 
+/* Centered Contact Info */
 #contact-info {
     padding: 20px 0;
     text-align: center;
@@ -72,6 +73,7 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap; /* Allows items to wrap on small screens */
 }
 
 .contact-info li {
@@ -185,17 +187,17 @@ footer .container {
     }
 
     .profile-picture {
-        width: 200px;
+        width: 200px; /* Reduce size for mobile */
         margin-right: 0;
     }
 
     .additional-images {
-        flex-direction: column;
+        flex-direction: column; /* Stack images vertically */
         max-width: 100%;
     }
 
     .additional-picture {
-        width: 100%;
+        width: 100%; /* Full-width images on mobile */
         margin: 10px 0;
     }
 
@@ -203,5 +205,11 @@ footer .container {
         width: 100%;
         max-width: 100%;
         margin: 10px 0;
+    }
+
+    /* Adjust contact info for mobile */
+    .contact-info {
+        flex-direction: column; /* Stack contact items vertically on mobile */
+        gap: 10px; /* Reduce gap between items */
     }
 }
