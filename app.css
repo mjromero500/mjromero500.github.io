@@ -10,9 +10,10 @@ body {
     flex-direction: column;
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+    min-height: 100vh;
 }
 
+/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -47,20 +48,22 @@ header nav ul li a {
     cursor: pointer;
 }
 
+/* Container Styles */
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
+/* Content Styles */
 .content {
-    flex: 1; /* Allow the content to grow and take up remaining space */
+    flex: 1;
     padding: 20px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* Centered Contact Info */
+/* Contact Info Styles */
 #contact-info {
     padding: 20px 0;
     text-align: center;
@@ -73,30 +76,31 @@ header nav ul li a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Allows items to wrap on small screens */
+    flex-wrap: wrap;
 }
 
 .contact-info li {
-    display: inline-block; /* Ensure items can wrap */
-    width: auto; /* Ensure they don't stretch to full width */
-    text-align: center; /* Center the text within each item */
+    display: inline-block;
+    width: auto;
+    text-align: center;
 }
 
 /* Link Styling */
 .contact-info li a {
-    color: blue; /* Set the link color to blue */
-    text-decoration: underline; /* Add an underline for typical link appearance */
+    color: blue;
+    text-decoration: underline;
 }
 
 .contact-info li a:visited {
-    color: purple; /* Change the color to purple after the link has been clicked */
+    color: purple;
 }
 
 .contact-info li a:hover {
-    color: darkblue; /* Change the link color when hovered */
-    text-decoration: underline; /* Keep underline on hover */
+    color: darkblue;
+    text-decoration: underline;
 }
 
+/* Footer Styles */
 footer {
     background-color: #333;
     color: #fff;
@@ -113,10 +117,12 @@ footer .container {
     position: relative;
 }
 
+/* Hidden Section */
 .hidden {
     display: none;
 }
 
+/* Image Container Styles */
 .image-container {
     display: flex;
     flex-direction: column;
@@ -152,31 +158,22 @@ footer .container {
     overflow: hidden;
 }
 
+/* Research Picture Styles */
 .research-picture {
-    width: 48%; /* Adjust width so both images fit side by side */
+    width: 48%;
     max-width: 600px;
     height: auto;
     display: inline-block;
-    vertical-align: top; /* Align the top of the images */
-    margin: 20px 0; /* Top and bottom margin */
+    vertical-align: top;
+    margin: 20px 0;
 }
 
 .experience-images {
     display: flex;
-    justify-content: center; /* Center the images together */
-    gap: 0; /* No gap between images */
-    margin-bottom: 20px; /* Space below the images */
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
-
-.research-picture:first-child {
-    margin-right: 10px; /* Increase space between the first and second image */
-}
-
-.research-picture:last-child {
-    margin-left: 10px; /* Increase space between the second and first image */
-}
-
-
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
@@ -209,39 +206,38 @@ footer .container {
     }
 
     .profile-picture {
-        width: 200px; /* Reduce size for mobile */
+        width: 200px;
         margin-right: 0;
     }
 
     .additional-images {
-        flex-direction: column; /* Stack images vertically */
+        flex-direction: column;
         max-width: 100%;
     }
 
     .additional-picture {
-        width: 100%; /* Full-width images on mobile */
+        width: 100%;
         margin: 10px 0;
     }
 
     .experience-images {
-        flex-direction: column; /* Stack images vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     .research-picture {
-        width: 100%; /* Full width on mobile */
-        margin-bottom: 20px; /* Add space between stacked images */
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    /* Adjust contact info for mobile */
     .contact-info {
-        flex-direction: column; /* Stack contact items vertically on mobile */
-        gap: 10px; /* Reduce gap between items */
-        align-items: center; /* Center align the items */
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
     }
 
     .contact-info li {
-        width: 100%; /* Make sure items take full width on mobile */
-        text-align: center; /* Center the text */
+        width: 100%;
+        text-align: center;
     }
 }
