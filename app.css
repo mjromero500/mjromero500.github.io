@@ -153,16 +153,30 @@ footer .container {
 }
 
 .research-picture {
-    width: 100%;
+    width: 48%; /* Adjust width so both images fit side by side */
     max-width: 600px;
     height: auto;
-    display: block;
-    margin: 20px 0;
+    display: inline-block;
+    vertical-align: top; /* Align the top of the images */
+    margin: 20px 0; /* Top and bottom margin */
 }
 
-.experience-item {
-    text-align: left;
+.experience-images {
+    display: flex;
+    justify-content: center; /* Center the images together */
+    gap: 0; /* No gap between images */
+    margin-bottom: 20px; /* Space below the images */
 }
+
+.research-picture:first-child {
+    margin-right: 10px; /* Increase space between the first and second image */
+}
+
+.research-picture:last-child {
+    margin-left: 10px; /* Increase space between the second and first image */
+}
+
+
 
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
@@ -209,10 +223,14 @@ footer .container {
         margin: 10px 0;
     }
 
+    .experience-images {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center;
+    }
+
     .research-picture {
-        width: 100%;
-        max-width: 100%;
-        margin: 10px 0;
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Add space between stacked images */
     }
 
     /* Adjust contact info for mobile */
